@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uz" data-site="br-architects">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BR Architects: arxitektura studiyasi uchun landing sahifa (demo).">
+  <meta name="color-scheme" content="light dark">
+  <title>BR Architects</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/core.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="i18n.js"></script>
+  <script src="assets/core.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#top" id="top"><img src="img/logo.svg" alt="" width="28" height="28"><span><b>BR</b> Architects</span></a>
+    <button class="burger" type="button" data-menu-toggle aria-controls="menu" aria-expanded="false" data-i18n-attr="aria-label:ui.menu" aria-label="Menyu"><i class="fa-solid fa-bars"></i></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#projects" data-i18n="nav.projects">Loyihalar</a>
+      <a href="#about" data-i18n="nav.about">Biz haqimizda</a>
+      <a href="#contact" data-i18n="nav.contact">Aloqa</a>
+      <span class="tools"><span data-lang-switch></span><button data-theme-toggle></button></span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="img/hero.svg" alt="" class="hero-img">
+      <div class="hero-box">
+        <span class="hero-mark">BR</span>
+        <div>
+          <h1>Architects</h1>
+          <p data-i18n="hero.tag">Arxitektura studiyasi</p>
+          <a class="btn" href="#projects" data-i18n="hero.cta">Loyihalarni ko'rish</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h2 class="title" data-i18n="projects.title">Loyihalar</h2>
+      <div class="grid g4">
+        <figure class="tile"><img src="img/house1.svg" alt="" loading="lazy"><figcaption data-i18n="p1">Yozgi uy</figcaption></figure>
+        <figure class="tile"><img src="img/house2.svg" alt="" loading="lazy"><figcaption data-i18n="p2">G'isht uy</figcaption></figure>
+        <figure class="tile"><img src="img/house3.svg" alt="" loading="lazy"><figcaption data-i18n="p3">Ta'mirlangan uy</figcaption></figure>
+        <figure class="tile"><img src="img/house4.svg" alt="" loading="lazy"><figcaption data-i18n="p4">Ombor-uy</figcaption></figure>
+        <figure class="tile"><img src="img/house3.svg" alt="" loading="lazy"><figcaption data-i18n="p3">Ta'mirlangan uy</figcaption></figure>
+        <figure class="tile"><img src="img/house4.svg" alt="" loading="lazy"><figcaption data-i18n="p4">Ombor-uy</figcaption></figure>
+        <figure class="tile"><img src="img/house1.svg" alt="" loading="lazy"><figcaption data-i18n="p1">Yozgi uy</figcaption></figure>
+        <figure class="tile"><img src="img/house2.svg" alt="" loading="lazy"><figcaption data-i18n="p2">G'isht uy</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="about" class="wrap">
+      <h2 class="title" data-i18n="about.title">Biz haqimizda</h2>
+      <p class="lead" data-i18n="about.text"></p>
+      <div class="grid g4 team">
+        <article class="member"><img src="img/team1.svg" alt="" loading="lazy"><h3>John Doe</h3><p class="role" data-i18n="team.ceo"></p><p data-i18n="team.bio"></p><button class="btn ghost" type="button" data-toast="form.ok" data-i18n="team.contact"></button></article>
+        <article class="member"><img src="img/team2.svg" alt="" loading="lazy"><h3>Jane Doe</h3><p class="role" data-i18n="team.arch"></p><p data-i18n="team.bio"></p><button class="btn ghost" type="button" data-toast="form.ok" data-i18n="team.contact"></button></article>
+        <article class="member"><img src="img/team3.svg" alt="" loading="lazy"><h3>Mike Ross</h3><p class="role" data-i18n="team.arch"></p><p data-i18n="team.bio"></p><button class="btn ghost" type="button" data-toast="form.ok" data-i18n="team.contact"></button></article>
+        <article class="member"><img src="img/team4.svg" alt="" loading="lazy"><h3>Dan Star</h3><p class="role" data-i18n="team.arch"></p><p data-i18n="team.bio"></p><button class="btn ghost" type="button" data-toast="form.ok" data-i18n="team.contact"></button></article>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2 class="title" data-i18n="contact.title">Aloqa</h2>
+      <p class="lead" data-i18n="contact.lead"></p>
+      <div class="contact-grid">
+        <form data-demo-form="form.ok">
+          <label><span data-i18n="form.name">Ism</span><input type="text" name="name" required autocomplete="name"></label>
+          <label><span data-i18n="form.email">Email</span><input type="email" name="email" required autocomplete="email"></label>
+          <label><span data-i18n="form.subject">Mavzu</span><input type="text" name="subject" required></label>
+          <label><span data-i18n="form.message">Xabar</span><textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit" data-i18n="form.send">XABAR YUBORISH</button>
+        </form>
+        <div class="info">
+          <p><i class="fa-regular fa-envelope"></i> <span data-i18n="contact.email">demo@example.com</span></p>
+          <p><i class="fa-solid fa-phone"></i> <span data-i18n="contact.phone">+998 00 000 00 00</span></p>
+          <img class="map" src="img/map.svg" alt="" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p data-i18n="foot.demo">Bu sahifa namuna (demo).</p>
+    <p class="cl-dev"><span data-i18n="ui.dev">Ishlab chiquvchi</span>: <a href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener">t.me/Abdulloh_77700</a></p>
+  </footer>
+</body>
+</html>

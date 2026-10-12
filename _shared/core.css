@@ -1,0 +1,18 @@
+/* collection-lab core UI: language switch, theme toggle, toast, helpers */
+.cl-lang { display: inline-flex; border: 1px solid color-mix(in srgb, currentColor 35%, transparent); border-radius: 999px; overflow: hidden; line-height: 1; }
+.cl-lang button { all: unset; box-sizing: border-box; cursor: pointer; padding: .45rem .65rem; font: 600 .75rem/1 system-ui, sans-serif; letter-spacing: .04em; min-width: 2.4rem; text-align: center; }
+.cl-lang button:hover { background: color-mix(in srgb, currentColor 12%, transparent); }
+.cl-lang button[aria-pressed="true"] { background: var(--cl-accent, #111); color: var(--cl-accent-on, #fff); }
+.cl-lang button:focus-visible, .cl-theme:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.cl-theme { all: unset; box-sizing: border-box; cursor: pointer; display: inline-grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 50%; border: 1px solid color-mix(in srgb, currentColor 35%, transparent); }
+.cl-theme:hover { background: color-mix(in srgb, currentColor 12%, transparent); }
+.cl-theme:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.cl-theme .cl-moon { display: none; }
+html[data-theme="dark"] .cl-theme .cl-sun { display: none; }
+html[data-theme="dark"] .cl-theme .cl-moon { display: block; }
+.cl-toast { position: fixed; left: 50%; bottom: 1.25rem; transform: translate(-50%, 140%); max-width: min(92vw, 28rem); padding: .75rem 1.1rem; border-radius: .6rem; background: #1b1b1f; color: #fff; font: 500 .9rem/1.35 system-ui, sans-serif; box-shadow: 0 8px 30px rgba(0,0,0,.35); z-index: 3000; opacity: 0; transition: transform .25s ease, opacity .25s ease; pointer-events: none; text-align: center; }
+.cl-toast.is-show { transform: translate(-50%, 0); opacity: 1; }
+html[data-theme="dark"] .cl-toast { background: #f2f2f5; color: #111; }
+.cl-dev { font-size: .85rem; opacity: .85; }
+.cl-dev a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } .cl-toast { transition: none; } }

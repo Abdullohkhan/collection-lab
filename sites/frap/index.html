@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz" data-site="frap">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Frap santexnika maketi (demo sahifa).">
+  <meta name="color-scheme" content="light dark">
+  <title>Frap (demo)</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2347b370'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/core.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="i18n.js"></script>
+  <script src="assets/core.js"></script>
+</head>
+<body>
+  <header class="hdr">
+    <div class="bar">
+      <span class="phone"><i class="fa-solid fa-phone"></i> <span data-i18n="demo.phone">+998 00 000 00 00</span></span>
+      <div class="tools">
+        <form class="search" id="search" role="search" onsubmit="return false">
+          <button type="button" class="ic" data-search-toggle aria-label="Search" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="search" id="q" data-i18n-attr="placeholder:top.search.ph,aria-label:top.search" placeholder="Katalogdan qidirish" aria-label="Search">
+        </form>
+        <button type="button" class="ic" data-toast="ui.demo" data-i18n-attr="aria-label:top.compare" aria-label="Compare"><i class="fa-solid fa-bars"></i></button>
+        <button type="button" class="ic" data-toast="ui.demo" data-i18n-attr="aria-label:top.fav" aria-label="Favorites"><i class="fa-regular fa-star"></i></button>
+        <button type="button" class="ic" id="cart" data-i18n-attr="aria-label:top.cart" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><b class="count" id="count" hidden>0</b></button>
+        <span data-lang-switch></span>
+        <button data-theme-toggle></button>
+      </div>
+    </div>
+    <div class="navrow">
+      <a class="logo" href="#top" id="top" aria-label="Frap">FRAP</a>
+      <button class="burger" type="button" data-menu-toggle aria-controls="nav" aria-expanded="false" data-i18n-attr="aria-label:ui.menu" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#cats" data-all data-i18n="nav.collection">KOLLEKSIYA</a>
+        <div class="drop">
+          <button type="button" class="drop-btn" aria-expanded="false" aria-controls="catmenu"><span data-i18n="nav.catalog">KATALOG</span> <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="drop-menu" id="catmenu">
+            <a href="#cats" data-cat="faucets" data-i18n="cat.faucets">Aralashtirgichlar</a>
+            <a href="#cats" data-cat="shower" data-i18n="cat.shower">Dush tizimlari</a>
+            <a href="#cats" data-cat="acc" data-i18n="cat.acc">Aksessuarlar</a>
+            <a href="#cats" data-cat="sink" data-i18n="cat.sink">Rakovinalar</a>
+            <a href="#cats" data-cat="mirrors" data-i18n="cat.mirrors">Ko'zgular</a>
+            <a href="#cats" data-cat="kitchen" data-i18n="cat.kitchen">Oshxona rakovinalari</a>
+          </div>
+        </div>
+        <a href="#quality" data-i18n="nav.about">KOMPANIYA HAQIDA</a>
+        <a href="#enjoy" data-i18n="nav.buyers">XARIDORLARGA</a>
+        <a href="#dealer" data-i18n="nav.dealers">DILERLIK</a>
+        <a href="#foot" data-i18n="nav.contacts">ALOQA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-in">
+        <p class="n"><span data-i18n="hero.n">01</span> <span class="yr" data-i18n="hero.year">2024</span></p>
+        <h1 data-i18n="hero.title" data-i18n-html>Taqlid<br>namunasi</h1>
+        <a class="btn" href="#cats" data-all data-i18n="hero.cta">KOLLEKSIYALAR 2024</a>
+      </div>
+    </section>
+
+    <section id="quality" class="sec center">
+      <i class="fa-solid fa-award big"></i>
+      <h2 data-i18n="q.title">Haqiqiy nemis sifati</h2>
+      <p class="sub" data-i18n="q.sub"></p>
+      <div class="cards">
+        <a class="card" href="#" data-demo data-i18n="q1" data-i18n-html></a>
+        <a class="card" href="#" data-demo data-i18n="q2" data-i18n-html></a>
+        <a class="card" href="#" data-demo data-i18n="q3" data-i18n-html></a>
+        <a class="card" href="#" data-demo data-i18n="q4" data-i18n-html></a>
+        <a class="card" href="#" data-demo data-i18n="q5" data-i18n-html></a>
+        <a class="card" href="#" data-demo data-i18n="q6" data-i18n-html></a>
+      </div>
+      <a class="btn alt" href="#" data-demo data-i18n="q.cta">KOMPANIYA HAQIDA BATAFSIL</a>
+    </section>
+
+    <section id="enjoy" class="sec enjoy center">
+      <i class="fa-solid fa-droplet big"></i>
+      <h2 data-i18n="enjoy.title">frap bilan zavqlaning</h2>
+      <p class="sub" data-i18n="enjoy.sub"></p>
+      <p class="txt" data-i18n="enjoy.text"></p>
+      <a class="btn" href="#cats" data-all data-i18n="enjoy.cta">KOLLEKSIYA</a>
+    </section>
+
+    <section id="cats" class="sec">
+      <h2 class="h-left" data-i18n="cats.title">Katalog toifalari</h2>
+      <div class="tiles" id="tiles">
+        <article class="tile" data-key="faucets"><span class="no c1">01</span><h3 data-i18n="cat.faucets"></h3><p data-i18n="cats.faucets.d"></p><button class="add" type="button" data-add><i class="fa-solid fa-cart-plus"></i></button></article>
+        <article class="tile" data-key="acc"><span class="no c2">02</span><h3 data-i18n="cat.acc"></h3><p data-i18n="cats.acc.d"></p><button class="add" type="button" data-add><i class="fa-solid fa-cart-plus"></i></button></article>
+        <article class="tile" data-key="shower"><span class="no c3">03</span><h3 data-i18n="cat.shower"></h3><p data-i18n="cats.shower.d"></p><button class="add" type="button" data-add><i class="fa-solid fa-cart-plus"></i></button></article>
+        <article class="tile" data-key="kitchen"><span class="no c4">04</span><h3 data-i18n="cat.kitchen"></h3><p data-i18n="cats.kitchen.d"></p><button class="add" type="button" data-add><i class="fa-solid fa-cart-plus"></i></button></article>
+        <article class="tile" data-key="hand"><span class="no c1">05</span><h3 data-i18n="cat.hand"></h3><p data-i18n="cats.mirrors.d"></p><button class="add" type="button" data-add><i class="fa-solid fa-cart-plus"></i></button></article>
+        <article class="tile" data-key="sink"><span class="no c2">06</span><h3 data-i18n="cat.sink"></h3><p data-i18n="cats.sink.d"></p><button class="add" type="button" data-add><i class="fa-solid fa-cart-plus"></i></button></article>
+        <article class="tile" data-key="mirrors"><span class="no c3">07</span><h3 data-i18n="cat.mirrors"></h3><p data-i18n="cats.mirrors.d"></p><button class="add" type="button" data-add><i class="fa-solid fa-cart-plus"></i></button></article>
+        <article class="tile" data-key="curtains"><span class="no c4">08</span><h3 data-i18n="cat.curtains"></h3><p data-i18n="cats.sink.d"></p><button class="add" type="button" data-add><i class="fa-solid fa-cart-plus"></i></button></article>
+      </div>
+      <p class="empty" id="empty" hidden data-i18n="cats.empty">Hech narsa topilmadi</p>
+    </section>
+
+    <section id="dealer" class="sec center ing">
+      <i class="fa-solid fa-gear big"></i>
+      <h2 data-i18n="ing.title" data-i18n-html>FRAP</h2>
+      <p class="sub" data-i18n="ing.sub"></p>
+      <p class="txt" data-i18n="ing.text"></p>
+      <a class="btn danger" href="#" data-demo data-i18n="ing.cta">DILER BO'LING</a>
+    </section>
+  </main>
+
+  <footer class="foot" id="foot">
+    <p data-i18n="foot.demo"></p>
+    <p class="cl-dev"><span data-i18n="ui.dev">Ishlab chiquvchi</span>: <a href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener">t.me/Abdulloh_77700</a></p>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

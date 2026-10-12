@@ -1,0 +1,12 @@
+:root { --cl-accent: #C52841; --cl-accent-on: #fff; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+.hero { background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.45)), url(img/header.jpg) center / cover no-repeat; }
+.nav-a { display: block; padding: .4rem .2rem; }
+.nav-a:hover { color: #C52841; }
+.mobile-menu { display: none; }
+.mobile-menu.is-menu-open { display: flex; }
+.mobile-menu .nav-a { padding: .7rem .4rem; border-bottom: 1px solid rgba(255,255,255,.12); }
+.dot { width: .7rem; height: .7rem; border-radius: 999px; background: #b9b9bf; border: 0; cursor: pointer; padding: 0; }
+.dot[aria-current="true"] { background: #C52841; }
+@media (max-width: 1023px) { .bg-fixed { background-attachment: scroll; } }
