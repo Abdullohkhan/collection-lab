@@ -25,7 +25,7 @@ python3 -m http.server 8000   # so'ng http://localhost:8000
 Umumiy fayllar (`_shared/core.js|css`, `_shared/vendor/`) o'zgarsa: `python3 _shared/sync.py` har bir saytga nusxalaydi.
 
 ## GitHub Pages
-Sozlamalar → Pages → **Source: GitHub Actions**. `main`ga push qilinganda `.github/workflows/pages.yml` saytni va ZIP'larni joylaydi: `https://abdullohkhan.github.io/collection-lab/`. Repo **public** bo'lsa bepul ishlaydi (private repo uchun bepul planda Pages yo'q).
+Sozlamalar → Pages → **Source: GitHub Actions**. `master`ga push qilinganda `.github/workflows/pages.yml` saytni va ZIP'larni joylaydi: `https://abdullohkhan.github.io/collection-lab/`. Repo **public** bo'lsa bepul ishlaydi (private repo uchun bepul planda Pages yo'q).
 
 ## English
 A monorepo of static websites. Each site under `sites/` is a **standalone** folder with its own `vendor/` (no CDN), images and translations, so you can open or download any one of them alone.
@@ -36,7 +36,7 @@ A monorepo of static websites. Each site under `sites/` is a **standalone** fold
 
 **Run locally:** `python3 -m http.server 8000`. After editing `_shared/`, run `python3 _shared/sync.py` to copy it into every site.
 
-**GitHub Pages:** Settings → Pages → **Source: GitHub Actions**. Pushing to `main` deploys the site and the ZIPs via `.github/workflows/pages.yml`. Free for public repos only.
+**GitHub Pages:** Settings → Pages → **Source: GitHub Actions**. Pushing to `master` deploys the site and the ZIPs via `.github/workflows/pages.yml`. Free for public repos only.
 
 ## Русский
 Монорепозиторий статических сайтов. Каждый сайт в `sites/` — **самостоятельная** папка со своим `vendor/` (без CDN), картинками и переводами, поэтому любой можно открыть или скачать отдельно.
@@ -47,7 +47,7 @@ A monorepo of static websites. Each site under `sites/` is a **standalone** fold
 
 **Локальный запуск:** `python3 -m http.server 8000`. После правок `_shared/` выполните `python3 _shared/sync.py`, чтобы скопировать их во все сайты.
 
-**GitHub Pages:** Settings → Pages → **Source: GitHub Actions**. Push в `main` публикует сайт и ZIP-архивы через `.github/workflows/pages.yml`. Бесплатно только для публичных репозиториев.
+**GitHub Pages:** Settings → Pages → **Source: GitHub Actions**. Push в `master` публикует сайт и ZIP-архивы через `.github/workflows/pages.yml`. Бесплатно только для публичных репозиториев.
 
 ---
 Developed by [t.me/Abdulloh_77700](https://t.me/Abdulloh_77700)
